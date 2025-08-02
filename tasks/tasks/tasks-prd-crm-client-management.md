@@ -66,4 +66,22 @@
   - [ ] 6.3 Add drilldown links from KPIs into client-specific dashboards
   - [ ] 6.4 Generate scheduled exports or email reports (weekly/monthly)
   - [ ] 6.5 Add trend indicators (green/red arrows, deltas vs. previous period)
+     
+- [ ] 7.0 Implement KAM Account Assignment and Role-Based Client Access
+  - [ ] 7.1 Extend `User` model to support assigned client relationships
+  - [ ] 7.2 Add client assignment UI in Admin Panel (assign/unassign clients to KAMs)
+  - [ ] 7.3 Update `ClientDashboard.tsx` to show account ownership and restrict editing
+  - [ ] 7.4 Create view showing number of accounts each KAM manages
+  - [ ] 7.5 Add role-based permission logic: editable if KAM is owner, read-only otherwise
+  - [ ] 7.6 Add test coverage for permission enforcement (editing and viewing scenarios)
+
+- [ ] 8.0 Implement Client Service & Subservice Assignment
+  - [ ] 8.1 Extend `Client` model to store selected services and subservices
+  - [ ] 8.2 Define the initial service taxonomy (Envios99, Tailor99, Freight99, Fulfill99 and all subservices)
+  - [ ] 8.3 Add UI component in `ClientDashboard.tsx` to assign/unassign services and subservices
+  - [ ] 8.4 Ensure selected services are displayed clearly on the client view
+  - [ ] 8.5 Add filtering capability in the reporting or client list view by service/subservice
+  - [ ] 8.6 Add validation rules to prevent conflicting or unsupported combinations
+  - [ ] 8.7 Write unit tests to ensure service assignment logic and permissions work as expected
+
 
