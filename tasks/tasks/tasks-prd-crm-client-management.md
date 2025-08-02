@@ -84,4 +84,28 @@
   - [ ] 8.6 Add validation rules to prevent conflicting or unsupported combinations
   - [ ] 8.7 Write unit tests to ensure service assignment logic and permissions work as expected
 
+- [ ] 9.0 Integrate Google Calendar for Events and Tasks
+  - [ ] 9.1 Set up Google OAuth for calendar access
+  - [ ] 9.2 Create `/api/integrations/google/calendar.ts` to fetch events, write tasks
+  - [ ] 9.3 Add calendar sync status and account info to user settings
+  - [ ] 9.4 Handle token expiration, refresh tokens, and error logging
+  - [ ] 9.5 Display upcoming meetings or deadlines from calendar in user dashboard
+  - [ ] 9.6 Add unit and integration tests for Google Calendar integration logic
+
+- [ ] 10.0 Build In-App Calendar View with Task Integration
+  - [ ] 10.1 Create `CalendarView.tsx` to render calendar UI with daily/weekly/monthly view
+  - [ ] 10.2 Link KAM-created tasks to calendar slots (e.g. follow-ups, contract renewal)
+  - [ ] 10.3 Allow new tasks to be added directly from the calendar interface
+  - [ ] 10.4 Visual indicators: differentiate between synced calendar events and CRM tasks
+  - [ ] 10.5 Filter calendar by client, task type, or service
+  - [ ] 10.6 Add role-based view: KAMs see their calendar, Managers can view team calendars
+  - [ ] 10.7 Add unit tests for rendering, filtering, and sync integrity
+
+Additions to Relevant Files Section
+- `pages/api/integrations/google/calendar.ts` - Handles syncing events and tasks from Google Calendar.
+- `components/CalendarView.tsx` - UI component for visual calendar interface.
+- `models/Task.ts` - Extend if needed to include calendar binding.
+- `lib/utils/calendar.ts` - Utilities for formatting events, mapping tasks to calendar slots.
+- `tests/calendar.test.tsx` - Tests for UI, sync state, and filtering behavior.
+- `tests/integrations/google-calendar.test.ts` - Tests for Google Calendar API interaction.
 
